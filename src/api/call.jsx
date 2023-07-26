@@ -1,5 +1,5 @@
 import unixToDOW from "../utils/unixToDOW"
-import { API_KEY } from "./key"
+// import { API_KEY } from "./key"
 
 const callAPI = (position, weatherSetter, days) => {
 
@@ -9,7 +9,7 @@ const callAPI = (position, weatherSetter, days) => {
   if (days === 1) {
     return (
       (async () => {
-        const data = await fetch(`${WEATHER_URL}/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=${API_KEY}&units=metric`)
+        const data = await fetch(`${WEATHER_URL}/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=${API_KEYS}&units=metric`)
           .then(
             (response) => response.json()
           )
@@ -28,7 +28,7 @@ const callAPI = (position, weatherSetter, days) => {
   } else {
     return (
       (async () => {
-        const data = await fetch(`${WEATHER_URL}/data/2.5/forecast?lat=${position.latitude}&lon=${position.longitude}&appid=${API_KEY}&units=metric`)
+        const data = await fetch(`${WEATHER_URL}/data/2.5/forecast?lat=${position.latitude}&lon=${position.longitude}&appid=${API_KEYS}&units=metric`)
           .then(
             (response) => response.json()
           )

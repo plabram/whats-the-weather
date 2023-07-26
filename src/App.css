@@ -1,0 +1,35 @@
+#root {
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background: var(--light);
+  position: sticky;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+nav {
+  padding-top: 20px;
+}
+
+nav > a {
+  padding: 10px;
+  color: var(--storm);
+}
+
+nav > a:focus {
+  color: var(--dark);
+}
+
+footer {
+  padding: 20px;
+  background: var(--light);
+  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

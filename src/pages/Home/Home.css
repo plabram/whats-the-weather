@@ -1,0 +1,11 @@
+.home {
+  padding-top: 10px;
+}
+
+.one-day-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

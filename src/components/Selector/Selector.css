@@ -1,0 +1,13 @@
+.selector {
+  margin: 20px;
+}
+
+option {
+  font-size: 2rem;
+}
+
+select {
+  font-size: 1.4rem;
+  padding: 5px;
+  border-radius: 5px;
+}

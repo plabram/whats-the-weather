@@ -2,6 +2,8 @@ import unixToDOW from "../utils/unixToDOW"
 // import { API_KEY } from "./key"
 
 const callAPI = (position, weatherSetter, days) => {
+
+  const API_KEYS = process.env.REACT_APP_API_KEYS
   const WEATHER_URL = "https://api.openweathermap.org"
   const selectedIndexes = [0, 7, 15, 23, 31];
 

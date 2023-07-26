@@ -3,7 +3,7 @@ import Loading from '../../components/Loading/Loading'
 import callAPI from '../../api/call'
 import WeatherCard from '../../components/WeatherCard/WeatherCard'
 import "./FiveDay.css"
-import { fiveDays } from '../mockData'
+import { fiveDays } from '../../mockData'
 
 const FiveDay = ({ position }) => {
   const [fiveDayWeather, setFiveDayWeather] = useState([{}, {}, {}, {}, {}])

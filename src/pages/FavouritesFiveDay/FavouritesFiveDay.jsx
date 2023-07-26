@@ -4,7 +4,7 @@ import WeatherCard from '../../components/WeatherCard/WeatherCard'
 import getCityCoords from '../../utils/getCityCoords'
 import callAPI from '../../api/call'
 import "./FavouritesFiveDay.css"
-import { fiveDays } from '../../../mockData'
+import { fiveDays } from '../../mockData'
 import Selector from '../../components/Selector/Selector'
 
 
